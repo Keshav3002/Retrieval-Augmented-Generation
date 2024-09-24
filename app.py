@@ -1,3 +1,7 @@
+##########
+# For asking queries use this command : curl -X POST http://127.0.0.1:5000/query -H "Content-Type: application/json" -d '{"query": "machine learning"}'
+# write query inside "query"
+##########
 from flask import Flask, request, jsonify
 from transformers import GPT2LMHeadModel, GPT2Tokenizer
 import torch
